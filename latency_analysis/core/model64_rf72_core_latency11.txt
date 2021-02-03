@@ -1,0 +1,583 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /data/Xilinx/Vivado/Vivado/2018.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/data/Xilinx/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'kdlin' on host 'correlator2.fnal.gov' (Linux_x86_64 version 3.10.0-957.21.3.el7.x86_64) on Tue Feb 02 12:35:56 CST 2021
+INFO: [HLS 200-10] On os "Scientific Linux release 7.9 (Nitrogen)"
+INFO: [HLS 200-10] In directory '/data/kdlin/latency_models/core_projects/latency_model64_rf72'
+INFO: [HLS 200-10] Opening project '/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj'.
+INFO: [HLS 200-10] Adding design file 'firmware/myproject.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Opening solution '/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+***** C/RTL SIMULATION *****
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/data/Xilinx/Vivado/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myproject.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: Unable to open input/predictions file, using default input.
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/data/Xilinx/Vivado/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /data/Xilinx/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_top glbl -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/Xilinx/Vivado/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myproject -debug wave 
+Multi-threading is on. Using 30 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_softmax_array_array_ap_fixed_8u_softmax_config1jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_softmax_array_array_ap_fixed_8u_softmax_config1jbC_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_softmax_array_array_ap_fixed_8u_softmax_config1jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/pooling2d_cl_array_array_ap_fixed_64u_config6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_64u_config6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_6_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_6_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/softmax_latency_array_array_softmax_config17_s_invert_tabfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_latency_array_array_softmax_config17_s_invert_tabfYi_rom
+INFO: [VRFC 10-311] analyzing module softmax_latency_array_array_softmax_config17_s_invert_tabfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d400_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d400_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mux_646_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_646_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_7_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_7_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module product
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mul_mul_16s_10ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_10ns_26_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_10ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/conv_2d_cl_array_array_ap_fixed_64u_config2_s_w2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_array_array_ap_fixed_64u_config2_s_w2_V_rom
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_array_array_ap_fixed_64u_config2_s_w2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_leaky_relu_array_array_LeakyReLU_config5_255_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config5_255_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config5_255_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/leaky_relu_array_array_LeakyReLU_config10_256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leaky_relu_array_array_LeakyReLU_config10_256
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_conv_2d_cl_array_array_ap_fixed_64u_config2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_conv_2d_cl_array_array_ap_fixed_64u_config2_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_conv_2d_cl_array_array_ap_fixed_64u_config2_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d100_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d100_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mux_255_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_255_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_6_V_data_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_6_V_data_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/Block_ap_fixed_base_exit493_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_ap_fixed_base_exit493_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/conv_2d_cl_array_array_ap_fixed_128u_config7_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_array_array_ap_fixed_128u_config7_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_automem_w11_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_w11_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/conv_2d_cl_array_array_ap_fixed_64u_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_array_array_ap_fixed_64u_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/leaky_relu_array_array_LeakyReLU_config14_257.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leaky_relu_array_array_LeakyReLU_config14_257
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/softmax_latency_array_array_softmax_config17_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_latency_array_array_softmax_config17_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d64_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d64_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mux_1287_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_1287_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_leaky_relu_array_array_LeakyReLU_config10_256_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config10_256_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config10_256_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d1_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/pooling2d_cl_array_array_ap_fixed_64u_config6_s_pool_tablbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_64u_config6_s_pool_tablbkb_rom
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_64u_config6_s_pool_tablbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_automem_w7_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_w7_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/leaky_relu_array_array_LeakyReLU_config5_255.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leaky_relu_array_array_LeakyReLU_config5_255
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/softmax_latency_array_array_softmax_config17_s_exp_table10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_latency_array_array_softmax_config17_s_exp_table10_rom
+INFO: [VRFC 10-311] analyzing module softmax_latency_array_array_softmax_config17_s_exp_table10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_zeropad2d_cl_array_array_ap_fixed_128u_config20g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_zeropad2d_cl_array_array_ap_fixed_128u_config20g8j_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_zeropad2d_cl_array_array_ap_fixed_128u_config20g8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_5_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_5_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_6_V_data_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_6_V_data_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d256_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d256_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d16_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_pooling2d_cl_array_array_ap_fixed_64u_config6_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_pooling2d_cl_array_array_ap_fixed_64u_config6_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_pooling2d_cl_array_array_ap_fixed_64u_config6_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mux_1287_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_1287_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/zeropad2d_cl_array_array_ap_fixed_3u_config18_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad2d_cl_array_array_ap_fixed_3u_config18_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mux_757_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_757_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/conv_2d_cl_array_array_ap_fixed_128u_config11_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_array_array_ap_fixed_128u_config11_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_zeropad2d_cl_array_array_ap_fixed_64u_config19_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_zeropad2d_cl_array_array_ap_fixed_64u_config19_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_zeropad2d_cl_array_array_ap_fixed_64u_config19_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject_mul_mul_16s_16s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/pooling2d_cl_array_array_ap_fixed_128u_config15_s_pool_tadEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_128u_config15_s_pool_tadEe_rom
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_128u_config15_s_pool_tadEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_dense_array_array_ap_fixed_16_6_5_3_0_8u_configibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_dense_array_array_ap_fixed_16_6_5_3_0_8u_configibs_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_dense_array_array_ap_fixed_16_6_5_3_0_8u_configibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/zeropad2d_cl_array_array_ap_fixed_128u_config20_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad2d_cl_array_array_ap_fixed_128u_config20_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/reduce_ap_fixed_4_Op_max_ap_fixed_16_6_5_3_0_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reduce_ap_fixed_4_Op_max_ap_fixed_16_6_5_3_0_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_leaky_relu_array_array_LeakyReLU_config14_257_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config14_257_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_leaky_relu_array_array_LeakyReLU_config14_257_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d80_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d80_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_w16_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_w16_V_rom
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_w16_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/pooling2d_cl_array_array_ap_fixed_128u_config15_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_array_array_ap_fixed_128u_config15_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_6_V_data_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_6_V_data_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d8_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d8_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d8_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/start_for_pooling2d_cl_array_array_ap_fixed_128u_config15hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_pooling2d_cl_array_array_ap_fixed_128u_config15hbi_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_pooling2d_cl_array_array_ap_fixed_128u_config15hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_4_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_4_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d16_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/softmax_array_array_ap_fixed_8u_softmax_config17_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_array_array_ap_fixed_8u_softmax_config17_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d24_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d24_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d24_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/zeropad2d_cl_array_array_ap_fixed_64u_config19_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad2d_cl_array_array_ap_fixed_64u_config19_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/fifo_w16_d24_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d24_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d24_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_V_data_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_V_data_2_V
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Block_ap_fixed_base_exit493_proc
+Compiling module xil_defaultlib.zeropad2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.conv_2d_cl_array_array_ap_fixed_...
+Compiling module xil_defaultlib.conv_2d_cl_array_array_ap_fixed_...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_26_1_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_26_1_1...
+Compiling module xil_defaultlib.product
+Compiling module xil_defaultlib.myproject_mux_1287_25_1_1(ID=1,d...
+Compiling module xil_defaultlib.myproject_mux_757_16_1_1(ID=1,di...
+Compiling module xil_defaultlib.fifo_w16_d80_A
+Compiling module xil_defaultlib.conv_2d_cl_array_array_ap_fixed_...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_10ns_26_1_...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_10ns_26_1_...
+Compiling module xil_defaultlib.leaky_relu_array_array_LeakyReLU...
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.reduce_ap_fixed_4_Op_max_ap_fixe...
+Compiling module xil_defaultlib.fifo_w16_d16_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d16_A
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.zeropad2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.myproject_mux_255_9_1_1(ID=1,din...
+Compiling module xil_defaultlib.myproject_mux_1287_16_1_1(ID=1,d...
+Compiling module xil_defaultlib.fifo_w16_d24_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d24_A
+Compiling module xil_defaultlib.conv_2d_cl_array_array_ap_fixed_...
+Compiling module xil_defaultlib.leaky_relu_array_array_LeakyReLU...
+Compiling module xil_defaultlib.zeropad2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.fifo_w16_d24_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d24_A_x
+Compiling module xil_defaultlib.conv_2d_cl_array_array_ap_fixed_...
+Compiling module xil_defaultlib.leaky_relu_array_array_LeakyReLU...
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.fifo_w16_d8_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d8_A
+Compiling module xil_defaultlib.pooling2d_cl_array_array_ap_fixe...
+Compiling module xil_defaultlib.dense_wrapper_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.dense_wrapper_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.myproject_mux_646_16_1_1(ID=1,di...
+Compiling module xil_defaultlib.dense_wrapper_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.dense_array_array_ap_fixed_16_6_...
+Compiling module xil_defaultlib.softmax_latency_array_array_soft...
+Compiling module xil_defaultlib.softmax_latency_array_array_soft...
+Compiling module xil_defaultlib.softmax_latency_array_array_soft...
+Compiling module xil_defaultlib.softmax_latency_array_array_soft...
+Compiling module xil_defaultlib.softmax_latency_array_array_soft...
+Compiling module xil_defaultlib.softmax_array_array_ap_fixed_8u_...
+Compiling module xil_defaultlib.fifo_w16_d400_A
+Compiling module xil_defaultlib.fifo_w16_d256_A
+Compiling module xil_defaultlib.fifo_w16_d64_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d64_A
+Compiling module xil_defaultlib.fifo_w16_d100_A
+Compiling module xil_defaultlib.fifo_w16_d16_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d16_A_x
+Compiling module xil_defaultlib.fifo_w16_d1_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d1_A
+Compiling module xil_defaultlib.start_for_conv_2d_cl_array_array...
+Compiling module xil_defaultlib.start_for_conv_2d_cl_array_array...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_pooling2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_pooling2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_zeropad2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_zeropad2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_zeropad2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_zeropad2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_leaky_relu_array_array...
+Compiling module xil_defaultlib.start_for_pooling2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_pooling2d_cl_array_arr...
+Compiling module xil_defaultlib.start_for_dense_array_array_ap_f...
+Compiling module xil_defaultlib.start_for_dense_array_array_ap_f...
+Compiling module xil_defaultlib.start_for_softmax_array_array_ap...
+Compiling module xil_defaultlib.start_for_softmax_array_array_ap...
+Compiling module xil_defaultlib.myproject
+Compiling module xil_defaultlib.AESL_automem_w7_V
+Compiling module xil_defaultlib.AESL_automem_w11_V
+Compiling module xil_defaultlib.fifo(DEPTH=256,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_input_6_V_data_0_V
+Compiling module xil_defaultlib.AESL_axi_s_input_6_V_data_1_V
+Compiling module xil_defaultlib.AESL_axi_s_input_6_V_data_2_V
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_0_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_1_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_2_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_3_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_4_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_5_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_6_...
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_V_data_7_...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_myproject_top
+Compiling module work.glbl
+Built simulation snapshot myproject
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/xsim.dir/myproject/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb  2 14:20:27 2021...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/myproject/xsim_script.tcl
+# xsim {myproject} -autoloadwcfg -tclbatch {myproject.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source myproject.tcl
+## log_wave -r /
+log_wave: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1679.480 ; gain = 192.000 ; free physical = 100640 ; free virtual = 146899
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set const_size_out_1_group [add_wave_group const_size_out_1(wire) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_out_1_ap_vld -into $const_size_out_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_out_1 -into $const_size_out_1_group -radix hex
+## set const_size_in_1_group [add_wave_group const_size_in_1(wire) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_in_1_ap_vld -into $const_size_in_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_in_1 -into $const_size_in_1_group -radix hex
+## set layer17_out_group [add_wave_group layer17_out(axis) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_7_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_7_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_6_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_6_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_5_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_5_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_4_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_4_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_3_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_3_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_2_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_2_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_1_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_1_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_0_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_0_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_7_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_6_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_5_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_4_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_3_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_2_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_1_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_V_data_0_V_TDATA -into $layer17_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set w11_group [add_wave_group w11(memory) -into $cinputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_we1 -into $w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_q1 -into $w11_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_d1 -into $w11_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_ce1 -into $w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_address1 -into $w11_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_we0 -into $w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_q0 -into $w11_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_d0 -into $w11_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_ce0 -into $w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w11_V_address0 -into $w11_group -radix hex
+## set w7_group [add_wave_group w7(memory) -into $cinputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_we1 -into $w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_q1 -into $w7_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_d1 -into $w7_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_ce1 -into $w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_address1 -into $w7_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_we0 -into $w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_q0 -into $w7_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_d0 -into $w7_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_ce0 -into $w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/w7_V_address0 -into $w7_group -radix hex
+## set input_6_group [add_wave_group input_6(axis) -into $cinputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_2_V_TREADY -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_2_V_TVALID -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_1_V_TREADY -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_1_V_TVALID -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_0_V_TREADY -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_0_V_TVALID -into $input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_2_V_TDATA -into $input_6_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_1_V_TDATA -into $input_6_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_6_V_data_0_V_TDATA -into $input_6_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_start -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_done -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_ready -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_myproject_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_6_V_data_0_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_6_V_data_1_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_6_V_data_2_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_0_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_1_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_2_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_3_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_4_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_5_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_6_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_V_data_7_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_w7_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_w11_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_const_size_in_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_const_size_out_1 -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_const_size_out_1_group [add_wave_group const_size_out_1(wire) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/const_size_out_1_ap_vld -into $tb_const_size_out_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/const_size_out_1 -into $tb_const_size_out_1_group -radix hex
+## set tb_const_size_in_1_group [add_wave_group const_size_in_1(wire) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/const_size_in_1_ap_vld -into $tb_const_size_in_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/const_size_in_1 -into $tb_const_size_in_1_group -radix hex
+## set tb_layer17_out_group [add_wave_group layer17_out(axis) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/layer17_out_V_data_7_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_7_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_6_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_6_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_5_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_5_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_4_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_4_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_3_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_3_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_2_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_2_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_1_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_1_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_0_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_0_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_7_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_6_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_5_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_4_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_3_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_2_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_1_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_V_data_0_V_TDATA -into $tb_layer17_out_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_w11_group [add_wave_group w11(memory) -into $tbcinputgroup]
+## add_wave /apatb_myproject_top/w11_V_we1 -into $tb_w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w11_V_q1 -into $tb_w11_group -radix hex
+## add_wave /apatb_myproject_top/w11_V_d1 -into $tb_w11_group -radix hex
+## add_wave /apatb_myproject_top/w11_V_ce1 -into $tb_w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w11_V_address1 -into $tb_w11_group -radix hex
+## add_wave /apatb_myproject_top/w11_V_we0 -into $tb_w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w11_V_q0 -into $tb_w11_group -radix hex
+## add_wave /apatb_myproject_top/w11_V_d0 -into $tb_w11_group -radix hex
+## add_wave /apatb_myproject_top/w11_V_ce0 -into $tb_w11_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w11_V_address0 -into $tb_w11_group -radix hex
+## set tb_w7_group [add_wave_group w7(memory) -into $tbcinputgroup]
+## add_wave /apatb_myproject_top/w7_V_we1 -into $tb_w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w7_V_q1 -into $tb_w7_group -radix hex
+## add_wave /apatb_myproject_top/w7_V_d1 -into $tb_w7_group -radix hex
+## add_wave /apatb_myproject_top/w7_V_ce1 -into $tb_w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w7_V_address1 -into $tb_w7_group -radix hex
+## add_wave /apatb_myproject_top/w7_V_we0 -into $tb_w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w7_V_q0 -into $tb_w7_group -radix hex
+## add_wave /apatb_myproject_top/w7_V_d0 -into $tb_w7_group -radix hex
+## add_wave /apatb_myproject_top/w7_V_ce0 -into $tb_w7_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/w7_V_address0 -into $tb_w7_group -radix hex
+## set tb_input_6_group [add_wave_group input_6(axis) -into $tbcinputgroup]
+## add_wave /apatb_myproject_top/input_6_V_data_2_V_TREADY -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_2_V_TVALID -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_1_V_TREADY -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_1_V_TVALID -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_0_V_TREADY -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_0_V_TVALID -into $tb_input_6_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_2_V_TDATA -into $tb_input_6_group -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_1_V_TDATA -into $tb_input_6_group -radix hex
+## add_wave /apatb_myproject_top/input_6_V_data_0_V_TDATA -into $tb_input_6_group -radix hex
+## save_wave_config myproject.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 11 [0.00%] @ "113000"
+// RTL Simulation : 1 / 11 [0.29%] @ "114418000"
+// RTL Simulation : 2 / 11 [0.29%] @ "228248000"
+// RTL Simulation : 3 / 11 [0.29%] @ "342078000"
+// RTL Simulation : 4 / 11 [0.29%] @ "455908000"
+// RTL Simulation : 5 / 11 [0.29%] @ "569738000"
+// RTL Simulation : 6 / 11 [0.29%] @ "683568000"
+// RTL Simulation : 7 / 11 [0.29%] @ "797398000"
+// RTL Simulation : 8 / 11 [0.29%] @ "911228000"
+// RTL Simulation : 9 / 11 [0.29%] @ "1025058000"
+// RTL Simulation : 10 / 11 [0.29%] @ "1138888000"
+// RTL Simulation : 11 / 11 [100.00%] @ "1252718000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1252737500 ps : File "/data/kdlin/latency_models/core_projects/latency_model64_rf72/myproject_prj/solution1/sim/verilog/myproject.autotb.v" Line 935
+run: Time (s): cpu = 00:06:15 ; elapsed = 00:43:11 . Memory (MB): peak = 1687.484 ; gain = 8.004 ; free physical = 98847 ; free virtual = 147936
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Feb  2 15:04:01 2021...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: Unable to open input/predictions file, using default input.
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO:
+Report time       : Tue Feb  2 15:04:02 CST 2021.
+Solution          : solution1.
+Simulation tool   : xsim.
+
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|          |          |                    Latency                    |                    Interval                   |
++   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+
+|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|
+|   Verilog|      Pass|          22859|          22859|          22859|          22766|          22766|          22766|
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+
+***** C/RTL SIMULATION COMPLETED IN 2h28m4s *****
+***** C/RTL VALIDATION *****
+ERROR: Test failed
+ERROR: - csim log:      ./tb_data/csim_results.log
+ERROR: - RTL-cosim log: ./tb_data/rtl_cosim_results.log
+INFO: [Common 17-206] Exiting vivado_hls at Tue Feb  2 15:04:02 2021...
