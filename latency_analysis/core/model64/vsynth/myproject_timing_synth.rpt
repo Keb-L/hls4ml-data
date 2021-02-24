@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date              : Wed Feb 24 14:39:09 2021
+| Host              : correlator2.fnal.gov running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command           : report_timing -file ./report/myproject_timing_synth.rpt
+| Design            : myproject
+| Device            : xcvu9p-flgb2104
+| Speed File        : -2  PRODUCTION 1.20 05-21-2018
+| Temperature Grade : I
+--------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.380ns  (required time - arrival time)
+  Source:                 dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/ap_CS_fsm_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.610ns  (logic 0.765ns (21.191%)  route 2.845ns (78.809%))
+  Logic Levels:           15  (LUT2=1 LUT4=2 LUT5=8 LUT6=2 MUXF7=2)
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=278786, unset)       0.000     0.000    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/ap_clk
+                         FDRE                                         r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/ap_CS_fsm_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.077 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/ap_CS_fsm_reg[1]/Q
+                         net (fo=899, unplaced)       0.284     0.361    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/w16_V_U/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_w16_V_rom_U/ap_CS_fsm_pp0_stage0
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.399 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/w16_V_U/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_w16_V_rom_U/q0_reg_8_i_1/O
+                         net (fo=55, unplaced)        0.269     0.668    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/w16_V_U_n_7
+                         LUT4 (Prop_LUT4_I2_O)        0.038     0.706 f  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_937_reg_95428[15]_i_49/O
+                         net (fo=10, unplaced)        0.189     0.895    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_937_reg_95428[15]_i_49_n_7
+                         LUT5 (Prop_LUT5_I1_O)        0.100     0.995 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_937_reg_95428[15]_i_60/O
+                         net (fo=512, unplaced)       0.320     1.315    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/p_0_in
+                         LUT6 (Prop_LUT6_I2_O)        0.038     1.353 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_23/O
+                         net (fo=1, unplaced)         0.197     1.550    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1475_fu_80190_p3[0]
+                         LUT5 (Prop_LUT5_I4_O)        0.037     1.587 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_20/O
+                         net (fo=1, unplaced)         0.024     1.611    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1476_fu_80198_p3[0]
+                         MUXF7 (Prop_MUXF7_I0_O)      0.067     1.678 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]_i_19/O
+                         net (fo=1, unplaced)         0.154     1.832    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1477_fu_80206_p3[0]
+                         LUT5 (Prop_LUT5_I4_O)        0.037     1.869 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_16/O
+                         net (fo=1, unplaced)         0.024     1.893    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1478_fu_80214_p3[0]
+                         MUXF7 (Prop_MUXF7_I0_O)      0.067     1.960 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]_i_15/O
+                         net (fo=1, unplaced)         0.154     2.114    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1479_fu_80222_p3[0]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     2.152 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_13/O
+                         net (fo=1, unplaced)         0.197     2.349    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1480_fu_80230_p3[0]
+                         LUT6 (Prop_LUT6_I2_O)        0.038     2.387 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_11/O
+                         net (fo=1, unplaced)         0.197     2.584    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_11_n_7
+                         LUT4 (Prop_LUT4_I2_O)        0.038     2.622 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_8/O
+                         net (fo=1, unplaced)         0.197     2.819    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_8_n_7
+                         LUT5 (Prop_LUT5_I2_O)        0.038     2.857 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_7/O
+                         net (fo=1, unplaced)         0.197     3.054    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1492_fu_80326_p3[0]
+                         LUT5 (Prop_LUT5_I2_O)        0.038     3.092 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_5/O
+                         net (fo=1, unplaced)         0.197     3.289    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_5_n_7
+                         LUT5 (Prop_LUT5_I2_O)        0.038     3.327 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_2/O
+                         net (fo=1, unplaced)         0.197     3.524    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_2_n_7
+                         LUT5 (Prop_LUT5_I0_O)        0.038     3.562 r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473[0]_i_1/O
+                         net (fo=1, unplaced)         0.048     3.610    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_fu_80422_p3[0]
+                         FDRE                                         r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=278786, unset)       0.000     5.000    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/ap_clk
+                         FDRE                                         r  dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]/C
+                         clock pessimism              0.000     5.000    
+                         clock uncertainty           -0.035     4.965    
+                         FDRE (Setup_FDRE_C_D)        0.025     4.990    dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0/grp_dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config16_s_fu_10473/tmp_1504_reg_95473_reg[0]
+  -------------------------------------------------------------------
+                         required time                          4.990    
+                         arrival time                          -3.610    
+  -------------------------------------------------------------------
+                         slack                                  1.380    
+
+
+
+
