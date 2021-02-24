@@ -1,0 +1,123 @@
+Found 1 solution(s) in ./myproject_prj.
+Reports for solution "solution1":
+
+C SIMULATION RESULT:
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../firmware/myproject.cpp in debug mode
+   Generating csim.exe
+INFO: Unable to open input/predictions file, using default input.
+INFO: Saved inference results to file: tb_data/csim_results.log
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
+
+SYNTHESIS REPORT:
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Wed Feb 24 15:11:54 2021
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flgb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   5.00|     4.366|        0.62|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+------+--------+----------+
+    |     Latency     |    Interval   | Pipeline |
+    |   min  |   max  |  min |   max  |   Type   |
+    +--------+--------+------+--------+----------+
+    |  508757|  510721|  1794|  510722| dataflow |
+    +--------+--------+------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+------+--------+------+--------+---------+
+        |                         |                      |    Latency    |    Interval   | Pipeline|
+        |         Instance        |        Module        |  min |   max  |  min |   max  |   Type  |
+        +-------------------------+----------------------+------+--------+------+--------+---------+
+        |Loop_6_proc_U0           |Loop_6_proc           |    65|     145|    65|     145|   none  |
+        |Loop_4_proc_U0           |Loop_4_proc           |   385|   37441|   385|   37441|   none  |
+        |Loop_3_proc_U0           |Loop_3_proc           |   385|   37441|   385|   37441|   none  |
+        |Loop_1_proc_U0           |Loop_1_proc           |  1793|  510721|  1793|  510721|   none  |
+        |Loop_5_proc_U0           |Loop_5_proc           |   513|     513|   513|     513|   none  |
+        |Loop_2_proc_U0           |Loop_2_proc           |  1537|    1537|  1537|    1537|   none  |
+        |softmax_stream_U0        |softmax_stream        |    57|      57|    57|      57|   none  |
+        |Block_arrayctor_loop_U0  |Block_arrayctor_loop  |     1|       1|     1|       1|   none  |
+        |Block_proc_U0            |Block_proc            |     0|       0|     0|       0|   none  |
+        +-------------------------+----------------------+------+--------+------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+---------+-----+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++-----------------+---------+-------+---------+---------+-----+
+|DSP              |        -|      -|        -|        -|    -|
+|Expression       |        -|      -|        0|        4|    -|
+|FIFO             |       28|      -|     1163|     1988|    -|
+|Instance         |      476|   1044|    35262|    61687|    -|
+|Memory           |        -|      -|        -|        -|    -|
+|Multiplexer      |        -|      -|        -|        -|    -|
+|Register         |        -|      -|        -|        -|    -|
++-----------------+---------+-------+---------+---------+-----+
+|Total            |      504|   1044|    36425|    63679|    0|
++-----------------+---------+-------+---------+---------+-----+
+|Available        |     4320|   6840|  2364480|  1182240|  960|
++-----------------+---------+-------+---------+---------+-----+
+|Utilization (%)  |       11|     15|        1|        5|    0|
++-----------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-------+-------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|   FF  |  LUT  |
+    +-------------------------+----------------------+---------+-------+-------+-------+
+    |Block_arrayctor_loop_U0  |Block_arrayctor_loop  |        0|      0|    327|    514|
+    |Block_proc_U0            |Block_proc            |        0|      0|      2|     11|
+    |Loop_1_proc_U0           |Loop_1_proc           |       49|    100|   5226|   7573|
+    |Loop_2_proc_U0           |Loop_2_proc           |        0|      0|   1563|   8151|
+    |Loop_3_proc_U0           |Loop_3_proc           |       64|    144|   4651|   8776|
+    |Loop_4_proc_U0           |Loop_4_proc           |      128|    288|   8967|  12784|
+    |Loop_5_proc_U0           |Loop_5_proc           |        0|      0|   2973|   8818|
+    |Loop_6_proc_U0           |Loop_6_proc           |      228|    512|  10496|  11819|
+    |softmax_stream_U0        |softmax_stream        |        7|      0|   1057|   3241|
+    +-------------------------+----------------------+---------+-------+-------+-------+
+    |Total                    |                      |      476|   1044|  35262|  61687|
+    +-------------------------+----------------------+---------+-------+-------+-------+
+
+CO-SIMULATION RESULT:
+Report time       : Wed Feb 24 15:15:56 CST 2021.
+Solution          : solution1.
+Simulation tool   : xsim.
+
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|          |          |                    Latency                    |                    Interval                   |
++   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+
+|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|
+|   Verilog|      Pass|           6922|           7304|           7343|           5788|           6166|           6209|
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+

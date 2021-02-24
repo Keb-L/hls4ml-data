@@ -1,0 +1,589 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /data/Xilinx/Vivado/Vivado/2018.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/data/Xilinx/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'kdlin' on host 'correlator2.fnal.gov' (Linux_x86_64 version 3.10.0-957.21.3.el7.x86_64) on Wed Feb 24 15:33:03 CST 2021
+INFO: [HLS 200-10] On os "Scientific Linux release 7.9 (Nitrogen)"
+INFO: [HLS 200-10] In directory '/data/kdlin/latency_models/phil_projects/df_model8_rf2'
+INFO: [HLS 200-10] Opening project '/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj'.
+INFO: [HLS 200-10] Adding design file 'firmware/myproject.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Opening solution '/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+***** C/RTL SIMULATION *****
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/data/Xilinx/Vivado/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myproject.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: Unable to open input/predictions file, using default input.
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/data/Xilinx/Vivado/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /data/Xilinx/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_top glbl -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /data/Xilinx/Vivado/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myproject -debug wave 
+Multi-threading is on. Using 30 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_layer_inpcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_layer_inpcA_core
+INFO: [VRFC 10-311] analyzing module cnnshift_layer_inpcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_3_2_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_3_2_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module product
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_7_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_7_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax_exp_res_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_exp_res_V_ram
+INFO: [VRFC 10-311] analyzing module softmax_exp_res_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_1_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_1_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_5_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_5_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_1_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_1_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_softmaxbIp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_softmaxbIp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_softmaxbIp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax_invert_tabzo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_invert_tabzo_rom
+INFO: [VRFC 10-311] analyzing module softmax_invert_tabzo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Loop_3_bEo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_3_bEo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_3_bEo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d84_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d84_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_4_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_4_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d64_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d64_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_6_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_6_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax_data_cachbAo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_data_cachbAo_ram
+INFO: [VRFC 10-311] analyzing module softmax_data_cachbAo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d1_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d1_A_x_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_x_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/zeropad_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/pooling2d_cl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject_mux_128ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_128ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d22_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d22_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d22_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_8_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_8_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_2_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_2_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_1_w2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_1_w2_V_rom
+INFO: [VRFC 10-311] analyzing module dense_large_1_w2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax_exp_table12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_exp_table12_rom
+INFO: [VRFC 10-311] analyzing module softmax_exp_table12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d22_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d22_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d22_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Loop_6_bHp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_6_bHp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_6_bHp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl_pad_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl_pad_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_3_w11_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_3_w11_V_rom
+INFO: [VRFC 10-311] analyzing module dense_large_3_w11_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_2_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_2_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject_mux_94_bBo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_94_bBo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_3_1_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_3_1_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl_pad_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl_pad_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject_mul_mulncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mulncg_DSP48_0
+INFO: [VRFC 10-311] analyzing module myproject_mul_mulncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_0_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_0_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_arr_1_labkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_1_labkb_core
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_1_labkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/pool_op.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_op
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_3_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_3_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d256_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d256_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl_pad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl_pad
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_1_layer_bjl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_1_layer_bjl_core
+INFO: [VRFC 10-311] analyzing module cnnshift_1_layer_bjl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Loop_2_bDo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_2_bDo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_2_bDo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_w7_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_w7_V_rom
+INFO: [VRFC 10-311] analyzing module dense_large_w7_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d1_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_3_3_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_3_3_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_4_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_4_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Block_abJp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Block_abJp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Block_abJp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_arr_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Block_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Loop_3_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_3_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/dense_large_2_w16_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_large_2_w16_V_rom
+INFO: [VRFC 10-311] analyzing module dense_large_2_w16_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/pooling2d_cl_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling2d_cl_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_3_0_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_3_0_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_arr_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Loop_4_bFp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_4_bFp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_4_bFp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject_mux_164bCo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_164bCo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/zeropad_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_arr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/Block_arrayctor_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_arrayctor_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/fifo_w16_d16_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d16_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_6_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_6_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift_arr_layexdS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_layexdS_core
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_layexdS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/start_for_Loop_5_bGp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_5_bGp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_5_bGp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/zeropad.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/conv_2d_large_cl2_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_large_cl2_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/cnnshift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer17_out_5_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer17_out_5_V_V
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Block_proc
+Compiling module xil_defaultlib.dense_large_1_w2_V_rom
+Compiling module xil_defaultlib.dense_large_1_w2_V(DataWidth=318...
+Compiling module xil_defaultlib.myproject_mul_mulncg_DSP48_0
+Compiling module xil_defaultlib.myproject_mul_mulncg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.product
+Compiling module xil_defaultlib.myproject_mux_128ocq(ID=1,din0_W...
+Compiling module xil_defaultlib.dense_large_1
+Compiling module xil_defaultlib.cnnshift_arr_1_labkb_core(DATA_W...
+Compiling module xil_defaultlib.cnnshift_arr_1_labkb(DataWidth=1...
+Compiling module xil_defaultlib.cnnshift_arr_1
+Compiling module xil_defaultlib.conv_2d_large_cl_pad_1
+Compiling module xil_defaultlib.zeropad_1
+Compiling module xil_defaultlib.fifo_w16_d84_A
+Compiling module xil_defaultlib.conv_2d_large_cl2_1
+Compiling module xil_defaultlib.Loop_1_proc
+Compiling module xil_defaultlib.pool_op
+Compiling module xil_defaultlib.cnnshift_layer_inpcA_core(DATA_W...
+Compiling module xil_defaultlib.cnnshift_layer_inpcA(DataWidth=1...
+Compiling module xil_defaultlib.cnnshift
+Compiling module xil_defaultlib.fifo_w16_d1_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d1_A
+Compiling module xil_defaultlib.pooling2d_cl
+Compiling module xil_defaultlib.Loop_2_proc
+Compiling module xil_defaultlib.dense_large_w7_V_rom
+Compiling module xil_defaultlib.dense_large_w7_V(DataWidth=9207,...
+Compiling module xil_defaultlib.dense_large
+Compiling module xil_defaultlib.cnnshift_arr_layexdS_core(DATA_W...
+Compiling module xil_defaultlib.cnnshift_arr_layexdS(DataWidth=1...
+Compiling module xil_defaultlib.cnnshift_arr
+Compiling module xil_defaultlib.conv_2d_large_cl_pad
+Compiling module xil_defaultlib.zeropad
+Compiling module xil_defaultlib.fifo_w16_d22_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d22_A
+Compiling module xil_defaultlib.conv_2d_large_cl2
+Compiling module xil_defaultlib.Loop_3_proc
+Compiling module xil_defaultlib.dense_large_3_w11_V_rom
+Compiling module xil_defaultlib.dense_large_3_w11_V(DataWidth=18...
+Compiling module xil_defaultlib.dense_large_3
+Compiling module xil_defaultlib.cnnshift_arr_2
+Compiling module xil_defaultlib.conv_2d_large_cl_pad_2
+Compiling module xil_defaultlib.zeropad_2
+Compiling module xil_defaultlib.fifo_w16_d22_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d22_A_x
+Compiling module xil_defaultlib.conv_2d_large_cl2_2
+Compiling module xil_defaultlib.Loop_4_proc
+Compiling module xil_defaultlib.cnnshift_1_layer_bjl_core(DATA_W...
+Compiling module xil_defaultlib.cnnshift_1_layer_bjl(DataWidth=1...
+Compiling module xil_defaultlib.cnnshift_1
+Compiling module xil_defaultlib.fifo_w16_d1_A_x_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d1_A_x
+Compiling module xil_defaultlib.pooling2d_cl_1
+Compiling module xil_defaultlib.Loop_5_proc
+Compiling module xil_defaultlib.dense_large_2_w16_V_rom
+Compiling module xil_defaultlib.dense_large_2_w16_V(DataWidth=16...
+Compiling module xil_defaultlib.dense_large_2
+Compiling module xil_defaultlib.dense_large_stream
+Compiling module xil_defaultlib.Loop_6_proc
+Compiling module xil_defaultlib.softmax_exp_table12_rom
+Compiling module xil_defaultlib.softmax_exp_table12(DataWidth=18...
+Compiling module xil_defaultlib.softmax_invert_tabzo_rom
+Compiling module xil_defaultlib.softmax_invert_tabzo(DataWidth=1...
+Compiling module xil_defaultlib.softmax_exp_res_V_ram
+Compiling module xil_defaultlib.softmax_exp_res_V(DataWidth=18,A...
+Compiling module xil_defaultlib.softmax_data_cachbAo_ram
+Compiling module xil_defaultlib.softmax_data_cachbAo(DataWidth=1...
+Compiling module xil_defaultlib.myproject_mux_94_bBo(ID=1,din0_W...
+Compiling module xil_defaultlib.myproject_mux_164bCo(ID=1,din0_W...
+Compiling module xil_defaultlib.softmax
+Compiling module xil_defaultlib.softmax_stream
+Compiling module xil_defaultlib.Block_arrayctor_loop
+Compiling module xil_defaultlib.fifo_w16_d256_A
+Compiling module xil_defaultlib.fifo_w16_d64_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d64_A
+Compiling module xil_defaultlib.fifo_w16_d16_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d16_A
+Compiling module xil_defaultlib.fifo_w16_d1_A_x_x_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d1_A_x_x
+Compiling module xil_defaultlib.start_for_Loop_2_bDo_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_2_bDo
+Compiling module xil_defaultlib.start_for_Loop_3_bEo_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_3_bEo
+Compiling module xil_defaultlib.start_for_Loop_4_bFp_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_4_bFp
+Compiling module xil_defaultlib.start_for_Loop_5_bGp_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_5_bGp
+Compiling module xil_defaultlib.start_for_Loop_6_bHp_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_6_bHp
+Compiling module xil_defaultlib.start_for_softmaxbIp_shiftReg
+Compiling module xil_defaultlib.start_for_softmaxbIp
+Compiling module xil_defaultlib.start_for_Block_abJp_shiftReg
+Compiling module xil_defaultlib.start_for_Block_abJp
+Compiling module xil_defaultlib.myproject
+Compiling module xil_defaultlib.fifo(DEPTH=256,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_input_3_0_V_V
+Compiling module xil_defaultlib.AESL_axi_s_input_3_1_V_V
+Compiling module xil_defaultlib.AESL_axi_s_input_3_2_V_V
+Compiling module xil_defaultlib.AESL_axi_s_input_3_3_V_V
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_0_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_1_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_2_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_3_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_4_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_5_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_6_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_7_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer17_out_8_V_V
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_myproject_top
+Compiling module work.glbl
+Built simulation snapshot myproject
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/xsim.dir/myproject/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 24 15:56:48 2021...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/myproject/xsim_script.tcl
+# xsim {myproject} -autoloadwcfg -tclbatch {myproject.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source myproject.tcl
+## log_wave -r /
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set const_size_out_1_group [add_wave_group const_size_out_1(wire) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_out_1_ap_vld -into $const_size_out_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_out_1 -into $const_size_out_1_group -radix hex
+## set const_size_in_1_group [add_wave_group const_size_in_1(wire) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_in_1_ap_vld -into $const_size_in_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/const_size_in_1 -into $const_size_in_1_group -radix hex
+## set layer17_out_group [add_wave_group layer17_out(axis) -into $coutputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_8_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_8_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_7_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_7_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_6_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_6_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_5_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_5_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_4_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_4_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_3_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_3_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_2_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_2_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_1_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_1_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_0_V_V_TREADY -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_0_V_V_TVALID -into $layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_8_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_7_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_6_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_5_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_4_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_3_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_2_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_1_V_V_TDATA -into $layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/layer17_out_0_V_V_TDATA -into $layer17_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set input_3_group [add_wave_group input_3(axis) -into $cinputgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_3_V_V_TREADY -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_3_V_V_TVALID -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_2_V_V_TREADY -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_2_V_V_TVALID -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_1_V_V_TREADY -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_1_V_V_TVALID -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_0_V_V_TREADY -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_0_V_V_TVALID -into $input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_3_V_V_TDATA -into $input_3_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_2_V_V_TDATA -into $input_3_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_1_V_V_TDATA -into $input_3_group -radix hex
+## add_wave /apatb_myproject_top/AESL_inst_myproject/input_3_0_V_V_TDATA -into $input_3_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_start -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_done -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_ready -into $blocksiggroup
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_myproject_top/AESL_inst_myproject/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_myproject_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_3_0_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_3_1_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_3_2_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_input_3_3_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_0_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_1_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_2_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_3_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_4_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_5_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_6_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_7_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_layer17_out_8_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_const_size_in_1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_myproject_top/LENGTH_const_size_out_1 -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_const_size_out_1_group [add_wave_group const_size_out_1(wire) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/const_size_out_1_ap_vld -into $tb_const_size_out_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/const_size_out_1 -into $tb_const_size_out_1_group -radix hex
+## set tb_const_size_in_1_group [add_wave_group const_size_in_1(wire) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/const_size_in_1_ap_vld -into $tb_const_size_in_1_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/const_size_in_1 -into $tb_const_size_in_1_group -radix hex
+## set tb_layer17_out_group [add_wave_group layer17_out(axis) -into $tbcoutputgroup]
+## add_wave /apatb_myproject_top/layer17_out_8_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_8_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_7_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_7_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_6_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_6_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_5_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_5_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_4_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_4_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_3_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_3_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_2_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_2_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_1_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_1_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_0_V_V_TREADY -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_0_V_V_TVALID -into $tb_layer17_out_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/layer17_out_8_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_7_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_6_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_5_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_4_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_3_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_2_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_1_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## add_wave /apatb_myproject_top/layer17_out_0_V_V_TDATA -into $tb_layer17_out_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_input_3_group [add_wave_group input_3(axis) -into $tbcinputgroup]
+## add_wave /apatb_myproject_top/input_3_3_V_V_TREADY -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_3_V_V_TVALID -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_2_V_V_TREADY -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_2_V_V_TVALID -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_1_V_V_TREADY -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_1_V_V_TVALID -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_0_V_V_TREADY -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_0_V_V_TVALID -into $tb_input_3_group -color #ffff00 -radix hex
+## add_wave /apatb_myproject_top/input_3_3_V_V_TDATA -into $tb_input_3_group -radix hex
+## add_wave /apatb_myproject_top/input_3_2_V_V_TDATA -into $tb_input_3_group -radix hex
+## add_wave /apatb_myproject_top/input_3_1_V_V_TDATA -into $tb_input_3_group -radix hex
+## add_wave /apatb_myproject_top/input_3_0_V_V_TDATA -into $tb_input_3_group -radix hex
+## save_wave_config myproject.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 11 [0.00%] @ "113000"
+// RTL Simulation : 1 / 11 [0.22%] @ "40668000"
+// RTL Simulation : 2 / 11 [0.22%] @ "76833000"
+// RTL Simulation : 3 / 11 [0.22%] @ "112998000"
+// RTL Simulation : 4 / 11 [0.22%] @ "149163000"
+// RTL Simulation : 5 / 11 [0.22%] @ "185328000"
+// RTL Simulation : 6 / 11 [0.22%] @ "221493000"
+// RTL Simulation : 7 / 11 [0.22%] @ "257658000"
+// RTL Simulation : 8 / 11 [0.22%] @ "293823000"
+// RTL Simulation : 9 / 11 [0.22%] @ "329988000"
+// RTL Simulation : 10 / 11 [0.22%] @ "366153000"
+// RTL Simulation : 11 / 11 [100.00%] @ "402318000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 402337500 ps : File "/data/kdlin/latency_models/phil_projects/df_model8_rf2/myproject_prj/solution1/sim/verilog/myproject.autotb.v" Line 893
+run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1487.480 ; gain = 0.000 ; free physical = 69257 ; free virtual = 97745
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Feb 24 15:57:29 2021...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: Unable to open input/predictions file, using default input.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.4' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.3' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.2' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.17' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.16' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.15' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.14' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.30' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.29' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.28' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.27' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.43' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.42' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.41' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.40' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.56' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.55' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.54' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.53' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.69' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.68' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.67' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.66' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.82' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.81' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.80' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.79' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.95' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.94' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.93' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.92' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.108' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.107' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.106' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.105' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.121' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.120' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.119' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.118' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.134' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.133' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.132' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >.131' contains leftover data, which may result in RTL simulation hanging.
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+***** C/RTL SIMULATION COMPLETED IN 0h24m25s *****
+INFO: [Common 17-206] Exiting vivado_hls at Wed Feb 24 15:57:29 2021...
