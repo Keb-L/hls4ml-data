@@ -1,0 +1,59 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'myproject'" level="0">
+<item name = "Date">Tue Apr 13 22:29:02 2021
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flgb2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.374 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">15663, 15664, 78.315 us, 78.320 us, 1104, 14801, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_conv_2d_large_cl2_ap_fixed_ap_fixed_config11_s_fu_26110">conv_2d_large_cl2_ap_fixed_ap_fixed_config11_s, 200, 14800, 1.000 us, 74.000 us, 200, 14800, none</column>
+<column name="grp_pooling2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config15_s_fu_26890">pooling2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config15_s, 70, 70, 0.350 us, 0.350 us, 70, 70, none</column>
+<column name="grp_dense_large_stream_ap_fixed_ap_fixed_config16_s_fu_27412">dense_large_stream_ap_fixed_ap_fixed_config16_s, 1103, 1104, 5.515 us, 5.520 us, 1103, 1104, none</column>
+<column name="grp_conv_2d_large_cl2_ap_fixed_ap_fixed_config7_s_fu_31650">conv_2d_large_cl2_ap_fixed_ap_fixed_config7_s, 200, 14800, 1.000 us, 74.000 us, 200, 14800, none</column>
+<column name="grp_pooling2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config6_s_fu_32110">pooling2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config6_s, 262, 262, 1.310 us, 1.310 us, 262, 262, none</column>
+<column name="grp_conv_2d_large_cl2_ap_fixed_ap_fixed_config2_s_fu_32376">conv_2d_large_cl2_ap_fixed_ap_fixed_config2_s, 800, 11600, 4.000 us, 58.000 us, 800, 11600, none</column>
+<column name="grp_leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config10_273_fu_32479">leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config10_273, 67, 67, 0.335 us, 0.335 us, 67, 67, none</column>
+<column name="grp_leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config14_274_fu_32739">leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config14_274, 67, 67, 0.335 us, 0.335 us, 67, 67, none</column>
+<column name="grp_softmax_stream_ap_fixed_ap_fixed_softmax_config17_s_fu_32999">softmax_stream_ap_fixed_ap_fixed_softmax_config17_s, 52, 52, 0.260 us, 0.260 us, 52, 52, none</column>
+<column name="grp_leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config5_272_fu_33031">leaky_relu_stream_ap_fixed_ap_fixed_LeakyReLU_config5_272, 259, 259, 1.295 us, 1.295 us, 259, 259, none</column>
+<column name="grp_zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config20_s_fu_33163">zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config20_s, 103, 103, 0.515 us, 0.515 us, 103, 103, none</column>
+<column name="grp_zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config19_s_fu_33423">zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config19_s, 103, 103, 0.515 us, 0.515 us, 103, 103, none</column>
+<column name="grp_zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config18_s_fu_33555">zeropad2d_cl_ap_fixed_ap_fixed_16_6_5_3_0_config18_s, 475, 475, 2.375 us, 2.375 us, 475, 475, none</column>
+<column name="call_ln0_Block_ap_fixed_base_exit913_proc_fu_33568">Block_ap_fixed_base_exit913_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

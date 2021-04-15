@@ -1,0 +1,19 @@
+KerasJson:  models/model64_model.json
+KerasH5:    models/model64_weights.h5
+
+#OutputDir: line_buffer/model8_latency
+OutputDir: line_buffer/model64_tclk_10k
+
+ProjectName: myproject
+XilinxPart: xcvu9p-flgb2104-2-i
+ClockPeriod: 5
+Backend: Vivado
+
+IOType: io_serial # options: io_serial/io_parallel
+HLSConfig:
+  Model:
+    Precision: ap_fixed<16,6>
+    Strategy: Resource
+    ReuseFactor: 256
+    TargetLatency: 10000
+    BramFactor: 1000000

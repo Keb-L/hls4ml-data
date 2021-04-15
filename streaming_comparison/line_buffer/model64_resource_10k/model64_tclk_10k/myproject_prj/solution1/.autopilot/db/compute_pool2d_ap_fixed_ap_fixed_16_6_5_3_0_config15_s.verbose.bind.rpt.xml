@@ -1,0 +1,174 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'compute_pool2d_ap_fixed_ap_fixed_16_6_5_3_0_config15_s'" level="0">
+<item name = "Date">Tue Apr 13 22:17:52 2021
+</item>
+<item name = "Version">2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flgb2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.839 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4, 4, 20.000 ns, 20.000 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7590">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7596">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7602">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7608">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7614">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7620">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7626">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7632">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7638">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7644">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7650">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7656">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7662">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7668">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7674">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7680">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7686">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7692">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7698">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7704">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7710">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7716">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7722">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7728">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7734">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7740">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7746">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7752">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7758">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7764">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7770">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7776">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7782">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7788">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7794">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7800">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7806">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7812">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7818">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7824">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7830">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7836">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7842">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7848">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7854">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7860">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7866">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7872">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7878">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7884">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7890">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7896">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7902">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7908">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7914">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7920">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7926">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7932">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7938">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7944">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7950">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7956">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7962">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7968">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7974">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7980">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7986">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7992">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_7998">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8004">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8010">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8016">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8022">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8028">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8034">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8040">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8046">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8052">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8058">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8064">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8070">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8076">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8082">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8088">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8094">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8100">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8106">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8112">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8118">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8124">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8130">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8136">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8142">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8148">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8154">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8160">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8166">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8172">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8178">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8184">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8190">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8196">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8202">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8208">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8214">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8220">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8226">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8232">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8238">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8244">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8250">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8256">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8262">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8268">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8274">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8280">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8286">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8292">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8298">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8304">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8310">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8316">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8322">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8328">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8334">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8340">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8346">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="grp_pool_op_ap_fixed_16_6_5_3_0_4_0_s_fu_8352">pool_op_ap_fixed_16_6_5_3_0_4_0_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="call_ret3327833279_shift_line_buffer_ap_fixed_ap_fixed_config15_s_fu_8358">shift_line_buffer_ap_fixed_ap_fixed_config15_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
