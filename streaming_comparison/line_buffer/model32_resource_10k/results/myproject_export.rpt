@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2019.2.1
+Project:             myproject_prj
+Solution:            solution1
+Device target:       xcvu9p-flgb2104-2-i
+Report date:         Mon Apr 12 15:35:01 CDT 2021
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:          66113
+FF:           78990
+DSP:            648
+BRAM:           292
+SRL:          15042
+URAM:             0
+#=== Final timing ===
+CP required:    5.000
+CP achieved post-synthesis:    3.692
+Timing met
