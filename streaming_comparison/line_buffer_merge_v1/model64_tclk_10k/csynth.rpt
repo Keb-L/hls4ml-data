@@ -1,0 +1,140 @@
+Found 1 solution(s) in ./myproject_prj.
+Reports for solution "solution1":
+
+C SIMULATION RESULT:
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../firmware/myproject.cpp in debug mode
+   Generating csim.exe
+INFO: Unable to open input/predictions file, using default input.
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125 
+INFO: Saved inference results to file: tb_data/csim_results.log
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
+
+SYNTHESIS REPORT:
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Mon Apr 19 20:11:38 2021
+
+* Version:        2019.2.1 (Build 2724168 on Thu Dec 05 05:19:09 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flgb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.374 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+-------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval   | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max  |   Type   |
+    +---------+---------+-----------+-----------+------+-------+----------+
+    |    15655|    15656| 78.275 us | 78.280 us |  1073|  14801| dataflow |
+    +---------+---------+-----------+-----------+------+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+------+-------+---------+
+        |                                                      |                                                     |  Latency (cycles) |   Latency (absolute)  |   Interval   | Pipeline|
+        |                       Instance                       |                        Module                       |   min   |   max   |    min    |    max    |  min |  max  |   Type  |
+        +------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+------+-------+---------+
+        |conv_2d_cl_array_array_ap_fixed_128u_config11_U0      |conv_2d_cl_array_array_ap_fixed_128u_config11_s      |      200|    14800|  1.000 us | 74.000 us |   200|  14800|   none  |
+        |dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0  |dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_s  |     1072|     1073|  5.360 us |  5.365 us |  1072|   1073|   none  |
+        |conv_2d_cl_array_array_ap_fixed_128u_config7_U0       |conv_2d_cl_array_array_ap_fixed_128u_config7_s       |      200|    14800|  1.000 us | 74.000 us |   200|  14800|   none  |
+        |pooling2d_cl_array_array_ap_fixed_128u_config15_U0    |pooling2d_cl_array_array_ap_fixed_128u_config15_s    |       67|       67|  0.335 us |  0.335 us |    67|     67|   none  |
+        |conv_2d_cl_array_array_ap_fixed_64u_config2_U0        |conv_2d_cl_array_array_ap_fixed_64u_config2_s        |      800|    11600|  4.000 us | 58.000 us |   800|  11600|   none  |
+        |pooling2d_cl_array_array_ap_fixed_64u_config6_U0      |pooling2d_cl_array_array_ap_fixed_64u_config6_s      |      259|      259|  1.295 us |  1.295 us |   259|    259|   none  |
+        |leaky_relu_array_array_LeakyReLU_config10_327_U0      |leaky_relu_array_array_LeakyReLU_config10_327        |       67|       67|  0.335 us |  0.335 us |    67|     67|   none  |
+        |leaky_relu_array_array_LeakyReLU_config14_328_U0      |leaky_relu_array_array_LeakyReLU_config14_328        |       67|       67|  0.335 us |  0.335 us |    67|     67|   none  |
+        |leaky_relu_array_array_LeakyReLU_config5_326_U0       |leaky_relu_array_array_LeakyReLU_config5_326         |      259|      259|  1.295 us |  1.295 us |   259|    259|   none  |
+        |zeropad2d_cl_array_array_ap_fixed_128u_config20_U0    |zeropad2d_cl_array_array_ap_fixed_128u_config20_s    |      103|      103|  0.515 us |  0.515 us |   103|    103|   none  |
+        |zeropad2d_cl_array_array_ap_fixed_64u_config19_U0     |zeropad2d_cl_array_array_ap_fixed_64u_config19_s     |      103|      103|  0.515 us |  0.515 us |   103|    103|   none  |
+        |softmax_array_array_ap_fixed_8u_softmax_config17_U0   |softmax_array_array_ap_fixed_8u_softmax_config17_s   |       17|       17| 85.000 ns | 85.000 ns |    17|     17|   none  |
+        |zeropad2d_cl_array_array_ap_fixed_3u_config18_U0      |zeropad2d_cl_array_array_ap_fixed_3u_config18_s      |      475|      475|  2.375 us |  2.375 us |   475|    475|   none  |
+        |Block_ap_fixed_base_exit4339_proc_U0                  |Block_ap_fixed_base_exit4339_proc                    |        0|        0|    0 ns   |    0 ns   |     0|      0|   none  |
+        +------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+------+-------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|      -|        0|       20|    -|
+|FIFO                 |      899|      -|    33385|    42815|    -|
+|Instance             |      785|   2065|   356002|   832726|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|       36|    -|
+|Register             |        -|      -|        6|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |     1684|   2065|   389393|   875597|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |     1440|   2280|   788160|   394080|  320|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |      116|     90|       49|      222|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     4320|   6840|  2364480|  1182240|  960|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |       38|     30|       16|       74|    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------+-----------------------------------------------------+---------+-------+--------+--------+-----+
+    |                       Instance                       |                        Module                       | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
+    +------------------------------------------------------+-----------------------------------------------------+---------+-------+--------+--------+-----+
+    |Block_ap_fixed_base_exit4339_proc_U0                  |Block_ap_fixed_base_exit4339_proc                    |        0|      0|       2|      11|    0|
+    |conv_2d_cl_array_array_ap_fixed_128u_config11_U0      |conv_2d_cl_array_array_ap_fixed_128u_config11_s      |      455|   1024|   51819|  434445|    0|
+    |conv_2d_cl_array_array_ap_fixed_128u_config7_U0       |conv_2d_cl_array_array_ap_fixed_128u_config7_s       |      228|    512|   25835|  117125|    0|
+    |conv_2d_cl_array_array_ap_fixed_64u_config2_U0        |conv_2d_cl_array_array_ap_fixed_64u_config2_s        |       86|    192|    6217|   25710|    0|
+    |dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_U0  |dense_array_array_ap_fixed_16_6_5_3_0_8u_config16_s  |       14|     16|  219134|  205282|    0|
+    |leaky_relu_array_array_LeakyReLU_config10_327_U0      |leaky_relu_array_array_LeakyReLU_config10_327        |        0|    128|      17|    6116|    0|
+    |leaky_relu_array_array_LeakyReLU_config14_328_U0      |leaky_relu_array_array_LeakyReLU_config14_328        |        0|    128|      17|    6116|    0|
+    |leaky_relu_array_array_LeakyReLU_config5_326_U0       |leaky_relu_array_array_LeakyReLU_config5_326         |        0|     64|      19|    3112|    0|
+    |pooling2d_cl_array_array_ap_fixed_128u_config15_U0    |pooling2d_cl_array_array_ap_fixed_128u_config15_s    |        0|      0|   34967|   17873|    0|
+    |pooling2d_cl_array_array_ap_fixed_64u_config6_U0      |pooling2d_cl_array_array_ap_fixed_64u_config6_s      |        0|      0|   17561|    9109|    0|
+    |softmax_array_array_ap_fixed_8u_softmax_config17_U0   |softmax_array_array_ap_fixed_8u_softmax_config17_s   |        2|      1|     312|     793|    0|
+    |zeropad2d_cl_array_array_ap_fixed_128u_config20_U0    |zeropad2d_cl_array_array_ap_fixed_128u_config20_s    |        0|      0|      27|    4389|    0|
+    |zeropad2d_cl_array_array_ap_fixed_3u_config18_U0      |zeropad2d_cl_array_array_ap_fixed_3u_config18_s      |        0|      0|      48|     368|    0|
+    |zeropad2d_cl_array_array_ap_fixed_64u_config19_U0     |zeropad2d_cl_array_array_ap_fixed_64u_config19_s     |        0|      0|      27|    2277|    0|
+    +------------------------------------------------------+-----------------------------------------------------+---------+-------+--------+--------+-----+
+    |Total                                                 |                                                     |      785|   2065|  356002|  832726|    0|
+    +------------------------------------------------------+-----------------------------------------------------+---------+-------+--------+--------+-----+
+
+CO-SIMULATION RESULT:
+Report time       : Mon Apr 19 20:26:12 CDT 2021.
+Solution          : solution1.
+Simulation tool   : xsim.
+
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|          |          |                    Latency                    |                    Interval                   |
++   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+
+|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|
+|   Verilog|      Pass|          13985|          18709|          23054|            476|           6993|          13511|
++----------+----------+-----------------------------------------------+-----------------------------------------------+
+
